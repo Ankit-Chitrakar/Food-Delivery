@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Online Food Delivery Website | DeliFoodZone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600;700&family=Rubik&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600;700&family=Bree+Serif&family=Rubik&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Baloo Bhai 2', cursive;
+            /* background-color: rgb(190, 190, 190); */
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        html header nav ul li a:hover,
+        html header nav ul li a.active {
+            color: black;
+            background-color: white;
+        }
+
+        /* Navigation Bar */
+
+        header nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 0px 20px;
+            font-size: 1.15rem;
+            border-radius: 10px;
+            margin: 2px 25px;
+        }
+
+
+
+
+        header nav ul li {
+            list-style: none;
+        }
+
+        #navbar {
+            display: flex;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        #navbar img {
+            display: flex;
+            align-items: center;
+            width: 56px;
+            height: auto;
+            margin: 0px 70px;
+            z-index: 1;
+        }
+
+        #banner {
+            border: 2px solid red;
+            border-radius: 20px;
+        }
+
+        #navbar ul {
+            display: flex;
+            align-items: center;
+            z-index: 1;
+            margin: 0px 150px;
+        }
+
+        #navbar::before {
+            background-color: rgb(27, 27, 27);
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 60px;
+            opacity: 0.4;
+            z-index: -1;
+        }
+
+
+        #navbar .logo .fb {
+            width: 20px;
+            height: auto;
+            margin: 8px;
+            cursor: pointer;
+        }
+
+        #navbar .logo .insta {
+            width: 20px;
+            height: auto;
+            margin: 8px;
+            cursor: pointer;
+        }
+
+        #navbar .logo .twitter {
+            width: 20px;
+            height: auto;
+            margin: 8px;
+            cursor: pointer;
+        }
+
+        #navbar .logo .email {
+            width: 20px;
+            height: auto;
+            margin: 8px;
+            cursor: pointer;
+        }
+
+        #navbar .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            position: relative;
+            right: -230px;
+        }
+
+        /* Home Page */
+
+        #home {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+            height: 800px;
+        }
+
+        #home::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: url('../image/bg4.jpg.jpg') no-repeat center center/cover;
+            background-position: top;
+            z-index: -1;
+            opacity: 0.89;
+            top: 0;
+            left: 0;
+        }
+
+        #home .text {
+            color: rgb(255, 255, 255);
+
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            flex-direction: column;
+        }
+
+        #home .text h1 {
+            font-size: 3.8rem;
+            font-family: 'Bree Serif', serif;
+            padding: 15px;
+            /* text-shadow: 1px 1px 3px rgb(241, 208, 208), 0 0 1em rgb(214, 214, 250), 0 0 0.7em rgb(116, 236, 162); */
+        }
+
+        #home .text p {
+            font-size: 1.2rem;
+            font-family: 'Bree Serif', serif;
+            color: white;
+            line-height: 30px;
+        }
+
+        #btn {
+            margin: 20px 0px;
+            padding: 2px 14px;
+            /* display: flex; */
+            font-size: 1.1rem;
+            cursor: pointer;
+            border-radius: 13px;
+        }
+
+        /* Our Service Section */
+
+        .Ankit {
+            margin-top: -158px;
+        }
+
+        #Services {
+            /* border: 3px solid black; */
+            display: block;
+            width: 100%;
+            height: 100%;
+            margin: 100px 0px;
+            /* background-color: rgb(190, 190, 190); */
+
+        }
+
+        #Services h1 {
+            /* text-align: center; */
+            font-size: 2.9rem;
+            padding: 22px;
+            margin-top: 0px;
+            height: 10vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #box1 {
+            border: 3px solid red;
+            width: 20%;
+            height: 60vh;
+            margin: 0px 34px;
+            border-radius: 10px;
+            background-color: #fff5a8;
+        }
+
+        #box1 img {
+            width: 300px;
+            height: 235px;
+            display: block;
+            margin: 1px auto;
+            border-radius: 5px;
+        }
+
+        #box1 p {
+            text-align: center;
+        }
+
+        #box1 h2 {
+            text-align: center;
+            font-size: 1.8rem;
+        }
+
+
+        #box2 {
+            border: 3px solid red;
+            width: 20%;
+            height: 60vh;
+            margin: 0px 34px;
+            border-radius: 10px;
+            background-color: #ffd5e79e;
+        }
+
+        #box2 img {
+            width: 300px;
+            height: 237px;
+            display: block;
+            margin: 1px auto;
+            border-radius: 5px;
+        }
+
+        #box2 p {
+            text-align: center;
+        }
+
+        #box2 h2 {
+            text-align: center;
+            font-size: 1.8rem;
+        }
+
+        #box3 {
+            border: 3px solid red;
+            border-radius: 10px;
+            width: 20%;
+            height: 60vh;
+            margin: 0px 34px;
+            background-color: #b2ff968c;
+        }
+
+        #box3 img {
+            width: 300px;
+            height: 242px;
+            display: block;
+            margin: 1px auto;
+            border-radius: 5px;
+        }
+
+        #box3 p {
+            text-align: center;
+        }
+
+        #box3 h2 {
+            text-align: center;
+            font-size: 1.8rem;
+        }
+
+        #box4 {
+            border: 3px solid red;
+            border-radius: 10px;
+            width: 20%;
+            height: 60vh;
+            margin: 0px 34px;
+            background-color: #ceff638c;
+        }
+
+        #box4 img {
+            width: 300px;
+            height: 250px;
+            display: block;
+            margin: 1px auto;
+            border-radius: 5px;
+        }
+
+        #box4 p {
+            text-align: center;
+        }
+
+        #box4 h2 {
+            text-align: center;
+            font-size: 1.8rem;
+        }
+
+        #Section-zone {
+            border: 2px solid black;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 83vh;
+            /* width: 100%; */
+            border-radius: 15px;
+            width: 100%;
+            background-color: #f3f3f3;
+            margin-top: 2px;
+        }
+
+        /* Our Clients */
+
+        #Clients {
+            height: 300px;
+            /* position: relative; */
+            margin: -100px 0px;
+
+        }
+
+        #Clients::before {
+            content: "";
+            position: absolute;
+            background: url(../image/bg.jpg.jpg) no-repeat center center/cover;
+            width: 100%;
+            height: 301px;
+            z-index: -1;
+            opacity: 0.35;
+            border-radius: 5px;
+        }
+
+        #Clients h1 {
+            font-size: 3rem;
+            padding: 22px;
+            margin-top: 0px;
+            height: 10vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .client-logo img {
+            width: 12vw;
+            height: auto;
+            display: flex;
+            padding: 0px 17px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: -23px 0px;
+        }
+
+        /* Contuct Us */
+        #Contact-us {
+            width: 100%;
+            height: 500px;
+            /* background-color: grey; */
+            margin: 104px 0px;
+        }
+
+        #Contact-us h1 {
+            font-size: 2.9rem;
+            padding: 22px;
+            margin-top: 0px;
+            height: 46px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contact {
+            height: 592px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contact::before {
+            content: "";
+            position: absolute;
+            background: url(../image/bg1.jpg.jpg) no-repeat center center/cover;
+            width: 100%;
+            height: 80%;
+            z-index: -1;
+            opacity: 0.49;
+            border-radius: 5px;
+            margin: 50px 0px;
+        }
+
+        #box {
+            width: 45vw;
+            height: 511px;
+            border: 3px solid red;
+            background-color: #e3d5dea8;
+            border-radius: 10px;
+            /* display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; */
+
+        }
+
+        #name {
+            width: 260px;
+            height: 31px;
+            border-radius: 20px;
+            margin: 0px 21px;
+            font-size: 1rem;
+        }
+
+        .name1 {
+            margin: 10px 0px;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+
+        .name1 input {
+            padding: 0px 22px;
+            color: rgb(112, 49, 49);
+        }
+
+        #address {
+            width: 260px;
+            height: 31px;
+            border-radius: 20px;
+            margin: 0px 25px;
+            font-size: 1rem;
+            position: relative;
+            left: -9px;
+        }
+
+        .address1 {
+            margin: 10px 0px;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+
+        .address1 input {
+            padding: 0px 20px;
+            color: rgb(112, 49, 49);
+
+        }
+
+        #pincode {
+            width: 239px;
+            height: 31px;
+            border-radius: 20px;
+            margin: 0px 22px;
+            font-size: 1rem;
+            position: relative;
+            left: -7px;
+        }
+
+        .pincode1 {
+            margin: 10px 0px;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+
+        .pincode1 input {
+            padding: 0px 30px;
+            color: rgb(112, 49, 49);
+
+        }
+
+        #landmark {
+            width: 246px;
+            height: 31px;
+            border-radius: 20px;
+            margin: 0px 26px;
+            font-size: 1rem;
+            position: relative;
+            left: -15px;
+        }
+
+        .landmark1 {
+            margin: 10px 0px;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+
+        .landmark1 input {
+            padding: 0px 30px;
+            color: rgb(112, 49, 49);
+        }
+
+        #Contact {
+            width: 246px;
+            height: 31px;
+            border-radius: 20px;
+            margin: 0px 26px;
+            font-size: 1rem;
+            position: relative;
+            left: -15px;
+        }
+
+        .contact1 {
+            margin: 10px 0px;
+            text-align: center;
+            font-size: 1.2rem;
+            position: relative;
+        }
+
+        .contact1 input {
+            padding: 0px 30px;
+            color: rgb(112, 49, 49);
+        }
+
+
+
+        #Service {
+            width: 232px;
+            height: 30px;
+            border-radius: 12px;
+            margin: 22px 37px 10px -7px;
+            font-size: 1rem;
+            position: relative;
+            left: 14px;
+        }
+
+        .service1 {
+            margin: 10px 0px;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+
+        .service1 {
+            padding: 0px 30px;
+        }
+
+        #Food-Ordering {
+            width: 232px;
+            height: 31px;
+            border-radius: 12px;
+            margin: 0px 37px 34px 44px;
+            font-size: 1rem;
+            position: relative;
+            left: -35px;
+        }
+
+        .foodordering1 {
+            margin: 10px 0px;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+
+        #Requirements {
+            width: 572px;
+            height: 100px;
+            border-radius: 20px;
+            margin: -22px 26px;
+            font-size: 1rem;
+            position: relative;
+            left: 0px;
+        }
+
+
+        .requirements1 {
+            margin: 10px 0px;
+            text-align: center;
+            font-size: 1.2rem;
+            /* border: 2px solid black; */
+        }
+
+        .requirements1 input {
+            margin: 5px 10px;
+            padding: 5px 20px;
+            box-sizing: border-box;
+            color: rgb(112, 49, 49);
+
+        }
+
+        ::placeholder {
+            color: blue;
+            font-size: 1rem;
+        }
+
+        #submit {
+            width: 323px;
+            height: auto;
+            font-size: 1.2rem;
+            position: relative;
+            top: 20px;
+            left: 205px;
+            border-radius: 16px;
+            color: #ff2727;
+            background-color: #fff2f2e8;
+            cursor: pointer;
+        }
+
+        /* Footer Section */
+
+        footer {
+            width: 100%;
+            height: 45px;
+            color: white;
+            background-color: #2d2d2d;
+            position: relative;
+            top: 78px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav id="navbar">
+            <img id="banner" src="../image/logo.png.jpg" alt="MyFoodCanteen.com">
+            <ul>
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#Services">Services</a></li>
+                <li><a href="#Clients">Clients</a></li>
+                <li><a href="#Contact-us">Contact Us</a></li>
+            </ul>
+            <div class="logo">
+                <img class="fb" src="../image/facebook.png" alt="">
+                <img class="insta" src="../image/instagram.png" alt="">
+                <img class="twitter" src="../image/twitter.png" alt="">
+                <img class="email" src="../image/email.png" alt="">
+            </div>
+        </nav>
+    </header>
+    <section id="home">
+        <div class="text">
+            <h1>Welcome to DeliFoodZone</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus deleniti eum rem, quos provident
+                sapiente culpa amet possimus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere cupiditate doloribus quod harum aliquid
+                Tempora.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <div class="ordernow">
+                <button id="btn">Order Now</button>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section -->
+    <div class="Ankit">
+        <section id="Services">
+            <h1>Our Services</h1>
+            <div id="Section-zone">
+                <div id="box1">
+                    <img src="../image/pizza.png.jpg" alt="">
+                    <h2>Food Ordering</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nulla quasi
+                        sequi expedita accusantium cupiditate corrupti omnis dicta ex quod?</p>
+                </div>
+                <div id="box2">
+                    <img src="../image/biriyani.png.png" alt="">
+                    <h2>Bulk Ordering</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nulla quasi
+                        sequi expedita accusantium cupiditate corrupti omnis dicta ex quod?</p>
+                </div>
+                <div id="box3">
+                    <img src="../image/delivary.png.png" alt="">
+                    <h2>Fast Delivery</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nulla quasi
+                        sequi expedita accusantium cupiditate corrupti omnis dicta ex quod?</p>
+                </div>
+                <div id="box4">
+                    <img src="../image/caterer.jpg" alt="">
+                    <h2>Caterer Services</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Eligendi nulla quasi
+                        sequi expedita accusantium cupiditate corrupti omnis dicta ex quod?</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Clients Section -->
+        <section id="Clients">
+            <h1>Our Clients</h1>
+            <div class="container">
+                <div class="client-logo">
+                    <img src="../image/Accenture.png" alt="">
+                </div>
+                <div class="client-logo">
+                    <img src="../image/wipro.png" alt="">
+                </div>
+                <div class="client-logo">
+                    <img src="../image/tcs.png" alt="">
+                </div>
+                <div class="client-logo">
+                    <img src="../image/infosys2.png" alt="">
+                </div>
+                <div class="client-logo">
+                    <img src="../image/Cognizant.png" alt="">
+                </div>
+                <div class="client-logo">
+                    <img src="../image/amazon2.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Us Section -->
+
+        <section id="Contact-us">
+            <h1>Contact Us</h1>
+            <div class="contact">
+                <div id="box">
+                    <form action="noaction.php">
+                        <p class="name1">Name: <input type="text" name="Name" id="name" placeholder="Enter Your Name">
+                        </p>
+                        <p class="address1">Address: <input type="text" name="adress" id="address"
+                                placeholder="Enter Your Location"></p>
+                        <p class="pincode1">Pincode: <input type="text" name="adress" id="pincode"
+                                placeholder="Pincode">
+                        </p>
+                        <p class="landmark1">Landmark: <input type="text" name="adress" id="landmark"
+                                placeholder="Enter Your Landmark"></p>
+                        <p class="contact1">Contact No: <input type="text" name="adress" id="Contact"
+                                placeholder="Enter Your Mobile No."></p>
+                        <p class="service1">Services:
+                            <select name="service" id="Service">
+                                <option value="default">--Please Select Your Service</option>
+                                <option value="Food Ordering">Food Ordering</option>
+                                <option value="Bulk Ordering">Bulk Ordering</option>
+                                <option value="Catering">Catering Services</option>
+                            </select>
+                        </p>
+                        <p class="foodordering1">Food Ordering:
+                            <select name="food ordering" id="Food-Ordering">
+                                <option value="default">--Please Select Your Meal</option>
+                                <option value="chienese">Chienese</option>
+                                <option value="Continental">Continental</option>
+                                <option value="Italian">Italian</option>
+                                <option value="Bengali">Bengali</option>
+                                <option value="Mughlai">Mughlai</option>
+                            </select>
+                        </p>
+                        <p class="requirements1">
+                            <input type="text" name="requirements" id="Requirements"
+                                placeholder="Enter Your Requirements (like- soup must be mideum spicy)">
+                        </p>
+                        <input id="submit" type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            Copyright &copy;Made by Ankit Chitrakar.
+        </footer>
+    </div>
+</body>
+
+</html>
